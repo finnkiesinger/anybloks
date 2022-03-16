@@ -1,0 +1,86 @@
+@font-face {
+    src: url("fonts/NunitoSans-Regular.ttf");
+}
+@font-face {
+    src: url("fonts/NunitoSans-Bold.ttf");
+}
+@font-face {
+    src: url("fonts/NunitoSans-ExtraBold.ttf");
+}
+@font-face {
+    src: url("fonts/NunitoSans-SemiBold.ttf");
+}
+@font-face {
+    src: url("fonts/NunitoSans-Light.ttf");
+}
+@font-face {
+    src: url("fonts/NunitoSans-ExtraLight.ttf");
+}
+@font-face {
+    src: url("fonts/NunitoSans-Black.ttf");
+}
+
+.textfield {
+    -fx-font-family: "Nunito Sans";
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-font-size: 16;
+    -fx-padding: 10 12;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 20, 0, 0, 2);
+}
+
+.heading {
+    -fx-font-family: "Nunito Sans";
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+}
+
+.info {
+    -fx-font-family: "Nunito Sans";
+    -fx-font-weight: normal;
+    -fx-font-size: 12;
+}
+
+.button {
+    -fx-font-family: "Nunito Sans";
+    -fx-padding: 10 32;
+    -fx-background-color: #54aaff;
+    -fx-background-radius: 12;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}
+.button:pressed {
+    -fx-background-color: #3d9dff;
+}
+
+.button:disabled {
+    -fx-background-color: #797979;
+}
+
+.error {
+    -fx-text-fill: #ff5f5f;
+    -fx-padding: 0 0 4 0;
+}
+
+.status {
+    -fx-text-fill: #54aaff;
+    -fx-padding: 0 0 4 0;
+}
+
+.secondary-button {
+    -fx-font-family: "Nunito Sans";
+    -fx-font-size: 12;
+    -fx-padding: 2 16;
+    -fx-background-color: #e1e1e1;
+    -fx-text-fill: black;
+    -fx-border-color: #cecdcd;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-font-weight: normal;
+}
+
+.secondary-button:pressed {
+    -fx-background-color: #d0d0d0;
+}

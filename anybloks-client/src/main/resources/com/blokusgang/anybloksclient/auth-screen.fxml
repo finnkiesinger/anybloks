@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="350.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blokusgang.anybloksclient.AuthController">
+   <padding>
+      <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label styleClass="heading" stylesheets="@auth-screen.css" text="Welcome to AnyBloks!" textAlignment="CENTER">
+         <font>
+            <Font name="Nunito Sans Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoLabel" styleClass="error" stylesheets="@auth-screen.css" />
+      <TextField fx:id="usernameTextfield" maxWidth="360.0" onKeyTyped="#onInputChanged" promptText="Username" styleClass="textfield" stylesheets="@auth-screen.css">
+         <font>
+            <Font name="American Typewriter" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </TextField>
+      <Region prefHeight="10.0" />
+      <PasswordField fx:id="passwordTextfield" onKeyTyped="#onInputChanged" promptText="Password" styleClass="textfield" stylesheets="@auth-screen.css" />
+      <Region prefHeight="20.0" />
+      <HBox alignment="CENTER" maxWidth="360.0">
+         <children>
+            <Label maxWidth="200.0" styleClass="info" stylesheets="@auth-screen.css" text="If you don't already have an account, one will be created with your credentials" wrapText="true">
+               <font>
+                  <Font name="American Typewriter" size="24.0" />
+               </font>
+            </Label>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="loginButton" disable="true" mnemonicParsing="false" onAction="#onLoginClick" stylesheets="@auth-screen.css" text="LOG IN">
+               <font>
+                  <Font name="American Typewriter" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Region prefHeight="48.0" />
+      <HBox alignment="CENTER_RIGHT" fillHeight="false">
+         <children>
+            <Button mnemonicParsing="false" styleClass="secondary-button" stylesheets="@auth-screen.css" text="Play Offline" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

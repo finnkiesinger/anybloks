@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blokusgang.anybloksclient.MenuController">
+   <children>
+      <AnchorPane maxWidth="200.0" minHeight="0.0" minWidth="200.0" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <VBox layoutX="-7.0" layoutY="-20.0" maxWidth="200.0" minWidth="100.0" prefHeight="60.0" prefWidth="100.0" spacing="2.0" style="-fx-background-color: rgb(245,245,245);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button id="online" fx:id="onlineButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMenuClick" prefHeight="40.0" stylesheets="@menu-screen.css" text="ONLINE">
+                     <styleClass>
+                        <String fx:value="menu-item" />
+                        <String fx:value="active" />
+                     </styleClass>
+                  </Button>
+                  <Button id="local" fx:id="localButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMenuClick" prefHeight="40.0" styleClass="menu-item" stylesheets="@menu-screen.css" text="LOCAL" />
+                  <Region VBox.vgrow="ALWAYS" />
+                  <Button id="settings" fx:id="settingsButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onMenuClick" prefHeight="40.0" styleClass="menu-item" stylesheets="@menu-screen.css" text="ACCOUNT" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="container" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" />
+   </children>
+</HBox>
